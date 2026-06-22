@@ -1,0 +1,66 @@
+[2026-05-28T09:44:01.045+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-28T09:44:01.082+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dynamic_metadata_pipeline.run_pipeline_1 manual__2026-05-28T09:38:51.098548+00:00 [queued]>
+[2026-05-28T09:44:01.092+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dynamic_metadata_pipeline.run_pipeline_1 manual__2026-05-28T09:38:51.098548+00:00 [queued]>
+[2026-05-28T09:44:01.096+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-05-28T09:44:01.113+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_pipeline_1> on 2026-05-28 09:38:51.098548+00:00
+[2026-05-28T09:44:01.120+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dynamic_metadata_pipeline', 'run_pipeline_1', 'manual__2026-05-28T09:38:51.098548+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/dynamic_pipeline_dag.py', '--cfg-path', '/tmp/tmpxdw1_ib1']
+[2026-05-28T09:44:01.123+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask run_pipeline_1
+[2026-05-28T09:44:01.123+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=314) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-28T09:44:01.124+0000] {standard_task_runner.py:63} INFO - Started process 315 to run task
+[2026-05-28T09:44:01.180+0000] {task_command.py:426} INFO - Running <TaskInstance: dynamic_metadata_pipeline.run_pipeline_1 manual__2026-05-28T09:38:51.098548+00:00 [running]> on host c6cceaa479c1
+[2026-05-28T09:44:01.268+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='subashri' AIRFLOW_CTX_DAG_ID='dynamic_metadata_pipeline' AIRFLOW_CTX_TASK_ID='run_pipeline_1' AIRFLOW_CTX_EXECUTION_DATE='2026-05-28T09:38:51.098548+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-28T09:38:51.098548+00:00'
+[2026-05-28T09:44:01.269+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-28T09:44:01.285+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-28T09:44:01.287+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/src && python main.py 1']
+[2026-05-28T09:44:01.298+0000] {subprocess.py:86} INFO - Output:
+[2026-05-28T09:44:06.210+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-28T09:44:06.211+0000] {subprocess.py:93} INFO -   File "/opt/***/src/main.py", line 4, in <module>
+[2026-05-28T09:44:06.214+0000] {subprocess.py:93} INFO -     from pipeline_executor import run_pipeline
+[2026-05-28T09:44:06.214+0000] {subprocess.py:93} INFO -   File "/opt/***/src/pipeline_executor.py", line 6, in <module>
+[2026-05-28T09:44:06.216+0000] {subprocess.py:93} INFO -     from reader import read_input
+[2026-05-28T09:44:06.216+0000] {subprocess.py:93} INFO -   File "/opt/***/src/reader.py", line 12, in <module>
+[2026-05-28T09:44:06.218+0000] {subprocess.py:93} INFO -     from parser_adapter import (
+[2026-05-28T09:44:06.218+0000] {subprocess.py:93} INFO -   File "/opt/***/src/parser_adapter.py", line 4, in <module>
+[2026-05-28T09:44:06.220+0000] {subprocess.py:93} INFO -     from parsers.parser_factory import get_parser
+[2026-05-28T09:44:06.220+0000] {subprocess.py:93} INFO -   File "/opt/***/src/parsers/parser_factory.py", line 5, in <module>
+[2026-05-28T09:44:06.222+0000] {subprocess.py:93} INFO -     from parsers.png_parser import parse_png
+[2026-05-28T09:44:06.223+0000] {subprocess.py:93} INFO -   File "/opt/***/src/parsers/png_parser.py", line 1, in <module>
+[2026-05-28T09:44:06.225+0000] {subprocess.py:93} INFO -     import easyocr
+[2026-05-28T09:44:06.225+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/easyocr/__init__.py", line 1, in <module>
+[2026-05-28T09:44:06.225+0000] {subprocess.py:93} INFO -     from .easyocr import Reader
+[2026-05-28T09:44:06.226+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/easyocr/easyocr.py", line 3, in <module>
+[2026-05-28T09:44:06.226+0000] {subprocess.py:93} INFO -     from .recognition import get_recognizer, get_text
+[2026-05-28T09:44:06.226+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/easyocr/recognition.py", line 10, in <module>
+[2026-05-28T09:44:06.227+0000] {subprocess.py:93} INFO -     from .utils import CTCLabelConverter
+[2026-05-28T09:44:06.227+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/easyocr/utils.py", line 7, in <module>
+[2026-05-28T09:44:06.227+0000] {subprocess.py:93} INFO -     import cv2
+[2026-05-28T09:44:06.228+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/cv2/__init__.py", line 181, in <module>
+[2026-05-28T09:44:06.228+0000] {subprocess.py:93} INFO -     bootstrap()
+[2026-05-28T09:44:06.228+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/cv2/__init__.py", line 153, in bootstrap
+[2026-05-28T09:44:06.229+0000] {subprocess.py:93} INFO -     native_module = importlib.import_module("cv2")
+[2026-05-28T09:44:06.229+0000] {subprocess.py:93} INFO -                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-28T09:44:06.229+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+[2026-05-28T09:44:06.229+0000] {subprocess.py:93} INFO -     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-05-28T09:44:06.230+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-28T09:44:06.230+0000] {subprocess.py:93} INFO - ImportError: libGL.so.1: cannot open shared object file: No such file or directory
+[2026-05-28T09:44:07.108+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-05-28T09:44:07.109+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-28T09:44:07.118+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-05-28T09:44:07.123+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dynamic_metadata_pipeline, task_id=run_pipeline_1, run_id=manual__2026-05-28T09:38:51.098548+00:00, execution_date=20260528T093851, start_date=20260528T094401, end_date=20260528T094407
+[2026-05-28T09:44:07.137+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 3 for task run_pipeline_1 (Bash command failed. The command returned a non-zero exit code 1.; 315)
+[2026-05-28T09:44:07.167+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-05-28T09:44:07.189+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-28T09:44:07.194+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

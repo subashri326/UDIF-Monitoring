@@ -1,0 +1,48 @@
+[2026-06-01T09:33:18.531+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-01T09:33:18.568+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dynamic_metadata_pipeline.run_pipeline_3 scheduled__2026-06-01T09:25:00+00:00 [queued]>
+[2026-06-01T09:33:18.580+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dynamic_metadata_pipeline.run_pipeline_3 scheduled__2026-06-01T09:25:00+00:00 [queued]>
+[2026-06-01T09:33:18.582+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-01T09:33:18.604+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_pipeline_3> on 2026-06-01 09:25:00+00:00
+[2026-06-01T09:33:18.613+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dynamic_metadata_pipeline', 'run_pipeline_3', 'scheduled__2026-06-01T09:25:00+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/dynamic_pipeline_dag.py', '--cfg-path', '/tmp/tmpptaqssig']
+[2026-06-01T09:33:18.617+0000] {standard_task_runner.py:91} INFO - Job 92: Subtask run_pipeline_3
+[2026-06-01T09:33:18.618+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1756) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-01T09:33:18.619+0000] {standard_task_runner.py:63} INFO - Started process 1761 to run task
+[2026-06-01T09:33:18.670+0000] {task_command.py:426} INFO - Running <TaskInstance: dynamic_metadata_pipeline.run_pipeline_3 scheduled__2026-06-01T09:25:00+00:00 [running]> on host 1103cbeaed03
+[2026-06-01T09:33:18.774+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='subashri' AIRFLOW_CTX_DAG_ID='dynamic_metadata_pipeline' AIRFLOW_CTX_TASK_ID='run_pipeline_3' AIRFLOW_CTX_EXECUTION_DATE='2026-06-01T09:25:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-01T09:25:00+00:00'
+[2026-06-01T09:33:18.775+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-01T09:33:18.798+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-06-01T09:33:18.801+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/src && python main.py 3']
+[2026-06-01T09:33:18.811+0000] {subprocess.py:86} INFO - Output:
+[2026-06-01T09:33:32.699+0000] {subprocess.py:93} INFO - 
+[2026-06-01T09:33:32.700+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-01T09:33:32.703+0000] {subprocess.py:93} INFO - DATABASE CONNECTION CONFIG
+[2026-06-01T09:33:32.704+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-01T09:33:32.704+0000] {subprocess.py:93} INFO - DB TYPE   : postgres
+[2026-06-01T09:33:32.705+0000] {subprocess.py:93} INFO - HOST      : 3.107.8.33
+[2026-06-01T09:33:32.706+0000] {subprocess.py:93} INFO - PORT      : 5432
+[2026-06-01T09:33:32.706+0000] {subprocess.py:93} INFO - DATABASE  : metadata_db
+[2026-06-01T09:33:32.708+0000] {subprocess.py:93} INFO - USERNAME  : teamuser
+[2026-06-01T09:33:32.709+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-01T09:33:32.710+0000] {subprocess.py:93} INFO - 
+[2026-06-01T09:33:32.711+0000] {subprocess.py:93} INFO - Connected to POSTGRES successfully.
+[2026-06-01T09:33:32.712+0000] {subprocess.py:93} INFO - 
+[2026-06-01T09:33:32.712+0000] {subprocess.py:93} INFO - Running pipeline: postgres_to_postgres_pipeline (db_to_db)
+[2026-06-01T09:33:32.713+0000] {subprocess.py:93} INFO - 
+[2026-06-01T09:33:32.714+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-01T09:33:32.714+0000] {subprocess.py:93} INFO - DATABASE CONNECTION CONFIG
+[2026-06-01T09:33:32.715+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-01T09:33:32.716+0000] {subprocess.py:93} INFO - DB TYPE   : postgres
+[2026-06-01T09:33:32.717+0000] {subprocess.py:93} INFO - HOST      : 3.107.8.33
+[2026-06-01T09:33:32.717+0000] {subprocess.py:93} INFO - PORT      : 5432
+[2026-06-01T09:33:32.718+0000] {subprocess.py:93} INFO - DATABASE  : udifdb
+[2026-06-01T09:33:32.719+0000] {subprocess.py:93} INFO - USERNAME  : teamuser
+[2026-06-01T09:33:32.720+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-01T09:33:32.721+0000] {subprocess.py:93} INFO - 
+[2026-06-01T09:33:32.722+0000] {subprocess.py:93} INFO - Connected to POSTGRES successfully.
+[2026-06-01T09:33:32.722+0000] {subprocess.py:93} INFO - Completed: 4653 rows processed
+[2026-06-01T09:33:32.915+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-06-01T09:33:32.916+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-01T09:33:32.953+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dynamic_metadata_pipeline, task_id=run_pipeline_3, run_id=scheduled__2026-06-01T09:25:00+00:00, execution_date=20260601T092500, start_date=20260601T093318, end_date=20260601T093332
+[2026-06-01T09:33:32.980+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-01T09:33:33.002+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-01T09:33:33.006+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

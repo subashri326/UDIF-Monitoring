@@ -1,0 +1,263 @@
+
+<employees>
+    <employee>
+        <employee_id>EMP001</employee_id>
+        <first_name>Arun</first_name>
+        <last_name>Kumar</last_name>
+        <department>IT</department>
+        <designation>Software Engineer</designation>
+        <email>arun.kumar@example.com</email>
+        <phone>9876543210</phone>
+        <salary>65000</salary>
+        <city>Chennai</city>
+        <joining_date>2022-01-15</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP002</employee_id>
+        <first_name>Priya</first_name>
+        <last_name>Sharma</last_name>
+        <department>HR</department>
+        <designation>HR Executive</designation>
+        <email>priya.sharma@example.com</email>
+        <phone>9876543211</phone>
+        <salary>55000</salary>
+        <city>Bangalore</city>
+        <joining_date>2021-11-20</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP003</employee_id>
+        <first_name>Rahul</first_name>
+        <last_name>Verma</last_name>
+        <department>Finance</department>
+        <designation>Accountant</designation>
+        <email>rahul.verma@example.com</email>
+        <phone>9876543212</phone>
+        <salary>60000</salary>
+        <city>Hyderabad</city>
+        <joining_date>2020-09-10</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP004</employee_id>
+        <first_name>Sneha</first_name>
+        <last_name>Iyer</last_name>
+        <department>Marketing</department>
+        <designation>Marketing Analyst</designation>
+        <email>sneha.iyer@example.com</email>
+        <phone>9876543213</phone>
+        <salary>58000</salary>
+        <city>Mumbai</city>
+        <joining_date>2023-02-01</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP005</employee_id>
+        <first_name>Vikram</first_name>
+        <last_name>Singh</last_name>
+        <department>IT</department>
+        <designation>DevOps Engineer</designation>
+        <email>vikram.singh@example.com</email>
+        <phone>9876543214</phone>
+        <salary>72000</salary>
+        <city>Pune</city>
+        <joining_date>2021-06-18</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP006</employee_id>
+        <first_name>Ananya</first_name>
+        <last_name>Rao</last_name>
+        <department>Sales</department>
+        <designation>Sales Executive</designation>
+        <email>ananya.rao@example.com</email>
+        <phone>9876543215</phone>
+        <salary>50000</salary>
+        <city>Delhi</city>
+        <joining_date>2022-08-25</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP007</employee_id>
+        <first_name>Karthik</first_name>
+        <last_name>Menon</last_name>
+        <department>IT</department>
+        <designation>Backend Developer</designation>
+        <email>karthik.menon@example.com</email>
+        <phone>9876543216</phone>
+        <salary>68000</salary>
+        <city>Chennai</city>
+        <joining_date>2020-03-12</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP008</employee_id>
+        <first_name>Meera</first_name>
+        <last_name>Nair</last_name>
+        <department>Support</department>
+        <designation>Support Engineer</designation>
+        <email>meera.nair@example.com</email>
+        <phone>9876543217</phone>
+        <salary>47000</salary>
+        <city>Kochi</city>
+        <joining_date>2023-01-05</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP009</employee_id>
+        <first_name>Ajay</first_name>
+        <last_name>Patel</last_name>
+        <department>Finance</department>
+        <designation>Financial Analyst</designation>
+        <email>ajay.patel@example.com</email>
+        <phone>9876543218</phone>
+        <salary>75000</salary>
+        <city>Ahmedabad</city>
+        <joining_date>2019-12-10</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP010</employee_id>
+        <first_name>Divya</first_name>
+        <last_name>Reddy</last_name>
+        <department>IT</department>
+        <designation>Frontend Developer</designation>
+        <email>divya.reddy@example.com</email>
+        <phone>9876543219</phone>
+        <salary>67000</salary>
+        <city>Hyderabad</city>
+        <joining_date>2021-10-14</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP011</employee_id>
+        <first_name>Ramesh</first_name>
+        <last_name>Gupta</last_name>
+        <department>Operations</department>
+        <designation>Operations Manager</designation>
+        <email>ramesh.gupta@example.com</email>
+        <phone>9876543220</phone>
+        <salary>82000</salary>
+        <city>Noida</city>
+        <joining_date>2018-07-09</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP012</employee_id>
+        <first_name>Pooja</first_name>
+        <last_name>Joshi</last_name>
+        <department>HR</department>
+        <designation>Recruiter</designation>
+        <email>pooja.joshi@example.com</email>
+        <phone>9876543221</phone>
+        <salary>53000</salary>
+        <city>Jaipur</city>
+        <joining_date>2022-04-22</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP013</employee_id>
+        <first_name>Suresh</first_name>
+        <last_name>Babu</last_name>
+        <department>IT</department>
+        <designation>QA Engineer</designation>
+        <email>suresh.babu@example.com</email>
+        <phone>9876543222</phone>
+        <salary>62000</salary>
+        <city>Chennai</city>
+        <joining_date>2020-11-11</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP014</employee_id>
+        <first_name>Neha</first_name>
+        <last_name>Kapoor</last_name>
+        <department>Marketing</department>
+        <designation>Content Strategist</designation>
+        <email>neha.kapoor@example.com</email>
+        <phone>9876543223</phone>
+        <salary>59000</salary>
+        <city>Delhi</city>
+        <joining_date>2021-09-16</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP015</employee_id>
+        <first_name>Manoj</first_name>
+        <last_name>Yadav</last_name>
+        <department>Sales</department>
+        <designation>Regional Sales Manager</designation>
+        <email>manoj.yadav@example.com</email>
+        <phone>9876543224</phone>
+        <salary>85000</salary>
+        <city>Lucknow</city>
+        <joining_date>2019-05-30</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP016</employee_id>
+        <first_name>Lavanya</first_name>
+        <last_name>Krishnan</last_name>
+        <department>IT</department>
+        <designation>Data Analyst</designation>
+        <email>lavanya.krishnan@example.com</email>
+        <phone>9876543225</phone>
+        <salary>70000</salary>
+        <city>Bangalore</city>
+        <joining_date>2022-06-19</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP017</employee_id>
+        <first_name>Harish</first_name>
+        <last_name>Chopra</last_name>
+        <department>Support</department>
+        <designation>Technical Support Lead</designation>
+        <email>harish.chopra@example.com</email>
+        <phone>9876543226</phone>
+        <salary>64000</salary>
+        <city>Pune</city>
+        <joining_date>2020-08-28</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP018</employee_id>
+        <first_name>Keerthana</first_name>
+        <last_name>Raj</last_name>
+        <department>Finance</department>
+        <designation>Tax Consultant</designation>
+        <email>keerthana.raj@example.com</email>
+        <phone>9876543227</phone>
+        <salary>71000</salary>
+        <city>Coimbatore</city>
+        <joining_date>2023-03-03</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP019</employee_id>
+        <first_name>Deepak</first_name>
+        <last_name>Mishra</last_name>
+        <department>Operations</department>
+        <designation>Project Coordinator</designation>
+        <email>deepak.mishra@example.com</email>
+        <phone>9876543228</phone>
+        <salary>61000</salary>
+        <city>Indore</city>
+        <joining_date>2021-12-12</joining_date>
+    </employee>
+
+    <employee>
+        <employee_id>EMP020</employee_id>
+        <first_name>Nithya</first_name>
+        <last_name>Balaji</last_name>
+        <department>IT</department>
+        <designation>Cloud Engineer</designation>
+        <email>nithya.balaji@example.com</email>
+        <phone>9876543229</phone>
+        <salary>78000</salary>
+        <city>Chennai</city>
+        <joining_date>2022-07-07</joining_date>
+    </employee>
+
+</employees>

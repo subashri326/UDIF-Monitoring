@@ -1,0 +1,46 @@
+[2026-06-08T06:10:02.775+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-08T06:10:02.864+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: local_to_s3_pipeline.run_pipeline_6 scheduled__2026-06-08T06:05:00+00:00 [queued]>
+[2026-06-08T06:10:02.882+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: local_to_s3_pipeline.run_pipeline_6 scheduled__2026-06-08T06:05:00+00:00 [queued]>
+[2026-06-08T06:10:02.882+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-08T06:10:02.906+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_pipeline_6> on 2026-06-08 06:05:00+00:00
+[2026-06-08T06:10:02.913+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'local_to_s3_pipeline', 'run_pipeline_6', 'scheduled__2026-06-08T06:05:00+00:00', '--job-id', '333', '--raw', '--subdir', 'DAGS_FOLDER/dynamic_pipeline_generator.py', '--cfg-path', '/tmp/tmpuknwho63']
+[2026-06-08T06:10:02.916+0000] {standard_task_runner.py:91} INFO - Job 333: Subtask run_pipeline_6
+[2026-06-08T06:10:02.916+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=800) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-08T06:10:02.917+0000] {standard_task_runner.py:63} INFO - Started process 801 to run task
+[2026-06-08T06:10:02.966+0000] {task_command.py:426} INFO - Running <TaskInstance: local_to_s3_pipeline.run_pipeline_6 scheduled__2026-06-08T06:05:00+00:00 [running]> on host 450cdec9e3e5
+[2026-06-08T06:10:03.084+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='subashri' AIRFLOW_CTX_DAG_ID='local_to_s3_pipeline' AIRFLOW_CTX_TASK_ID='run_pipeline_6' AIRFLOW_CTX_EXECUTION_DATE='2026-06-08T06:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-08T06:05:00+00:00'
+[2026-06-08T06:10:03.085+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-08T06:10:03.125+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-06-08T06:10:03.129+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/src && python main.py 6']
+[2026-06-08T06:10:03.138+0000] {subprocess.py:86} INFO - Output:
+[2026-06-08T06:10:12.965+0000] {subprocess.py:93} INFO - Using CPU. Note: This module is much faster with a GPU.
+[2026-06-08T06:10:40.776+0000] {subprocess.py:93} INFO - /home/***/.local/lib/python3.12/site-packages/torch/utils/data/dataloader.py:752: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+[2026-06-08T06:10:40.778+0000] {subprocess.py:93} INFO -   super().__init__(loader)
+[2026-06-08T06:10:55.912+0000] {subprocess.py:93} INFO - 
+[2026-06-08T06:10:55.915+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-08T06:10:55.918+0000] {subprocess.py:93} INFO - DATABASE CONNECTION CONFIG
+[2026-06-08T06:10:55.921+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-08T06:10:55.924+0000] {subprocess.py:93} INFO - DB TYPE   : postgres
+[2026-06-08T06:10:55.926+0000] {subprocess.py:93} INFO - HOST      : 3.107.8.33
+[2026-06-08T06:10:55.928+0000] {subprocess.py:93} INFO - PORT      : 5432
+[2026-06-08T06:10:55.930+0000] {subprocess.py:93} INFO - DATABASE  : metadata_db
+[2026-06-08T06:10:55.931+0000] {subprocess.py:93} INFO - USERNAME  : teamuser
+[2026-06-08T06:10:55.933+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-08T06:10:55.934+0000] {subprocess.py:93} INFO - 
+[2026-06-08T06:10:55.935+0000] {subprocess.py:93} INFO - Connected to POSTGRES successfully.
+[2026-06-08T06:10:55.936+0000] {subprocess.py:93} INFO - 
+[2026-06-08T06:10:55.938+0000] {subprocess.py:93} INFO - Running pipeline: local_to_s3_pipeline (storage_to_storage)
+[2026-06-08T06:10:55.939+0000] {subprocess.py:93} INFO - Processing file: customer (2 rows)
+[2026-06-08T06:10:55.940+0000] {subprocess.py:93} INFO - Processing file: data pic1 (91 rows)
+[2026-06-08T06:10:55.941+0000] {subprocess.py:93} INFO - Processing file: employee (20 rows)
+[2026-06-08T06:10:55.942+0000] {subprocess.py:93} INFO - Processing file: employee_data (100 rows)
+[2026-06-08T06:10:55.942+0000] {subprocess.py:93} INFO - Processing file: sample (2 rows)
+[2026-06-08T06:10:55.943+0000] {subprocess.py:93} INFO - Processing file: word (12 rows)
+[2026-06-08T06:10:55.944+0000] {subprocess.py:93} INFO - Processed total rows: 227
+[2026-06-08T06:10:55.945+0000] {subprocess.py:93} INFO - Completed: 227 rows processed
+[2026-06-08T06:10:57.003+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-06-08T06:10:57.016+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-08T06:10:57.044+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=local_to_s3_pipeline, task_id=run_pipeline_6, run_id=scheduled__2026-06-08T06:05:00+00:00, execution_date=20260608T060500, start_date=20260608T061002, end_date=20260608T061057
+[2026-06-08T06:10:57.098+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-08T06:10:57.126+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-08T06:10:57.134+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

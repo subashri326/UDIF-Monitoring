@@ -1,0 +1,17 @@
+config.yaml
+      │
+      ▼
+   main.py
+      │
+   ┌──┴──────────────────────────┐
+   │                             │
+   ▼                             ▼
+extractor.py              transformer.py
+(Source DB)               (Layer 1 + Layer 2)
+   │                             │
+   └──────────────┬──────────────┘
+                  │
+         ┌────────┴────────┐
+         ▼                 ▼
+     uploader.py       loader.py
+   (S3 or Local)     (Target DB)

@@ -1,0 +1,15 @@
+<customers>
+
+    <customer>
+        <id>1</id>
+        <name>Subashri</name>
+        <city>Chennai</city>
+    </customer>
+
+    <customer>
+        <id>2</id>
+        <name>keerthana</name>
+        <city>Bangalore</city>
+    </customer>
+
+</customers>

@@ -1,0 +1,46 @@
+[2026-06-03T16:40:02.906+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-03T16:40:02.960+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: local_to_postgres_pipeline.run_pipeline_4 scheduled__2026-06-03T16:35:00+00:00 [queued]>
+[2026-06-03T16:40:02.972+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: local_to_postgres_pipeline.run_pipeline_4 scheduled__2026-06-03T16:35:00+00:00 [queued]>
+[2026-06-03T16:40:02.974+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-03T16:40:02.993+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_pipeline_4> on 2026-06-03 16:35:00+00:00
+[2026-06-03T16:40:03.003+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'local_to_postgres_pipeline', 'run_pipeline_4', 'scheduled__2026-06-03T16:35:00+00:00', '--job-id', '183', '--raw', '--subdir', 'DAGS_FOLDER/dynamic_pipeline_generator.py', '--cfg-path', '/tmp/tmp56vbr_k3']
+[2026-06-03T16:40:03.008+0000] {standard_task_runner.py:91} INFO - Job 183: Subtask run_pipeline_4
+[2026-06-03T16:40:03.010+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1219) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-03T16:40:03.012+0000] {standard_task_runner.py:63} INFO - Started process 1220 to run task
+[2026-06-03T16:40:03.075+0000] {task_command.py:426} INFO - Running <TaskInstance: local_to_postgres_pipeline.run_pipeline_4 scheduled__2026-06-03T16:35:00+00:00 [running]> on host 6efe7055fb80
+[2026-06-03T16:40:03.192+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='subashri' AIRFLOW_CTX_DAG_ID='local_to_postgres_pipeline' AIRFLOW_CTX_TASK_ID='run_pipeline_4' AIRFLOW_CTX_EXECUTION_DATE='2026-06-03T16:35:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-03T16:35:00+00:00'
+[2026-06-03T16:40:03.193+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-03T16:40:03.224+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-06-03T16:40:03.229+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/src && python main.py 4']
+[2026-06-03T16:40:03.240+0000] {subprocess.py:86} INFO - Output:
+[2026-06-03T16:40:13.762+0000] {subprocess.py:93} INFO - Using CPU. Note: This module is much faster with a GPU.
+[2026-06-03T16:40:30.698+0000] {subprocess.py:93} INFO - /home/***/.local/lib/python3.12/site-packages/torch/utils/data/dataloader.py:752: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+[2026-06-03T16:40:30.699+0000] {subprocess.py:93} INFO -   super().__init__(loader)
+[2026-06-03T16:41:16.506+0000] {subprocess.py:93} INFO - 
+[2026-06-03T16:41:16.510+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-03T16:41:16.514+0000] {subprocess.py:93} INFO - DATABASE CONNECTION CONFIG
+[2026-06-03T16:41:16.516+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-03T16:41:16.519+0000] {subprocess.py:93} INFO - DB TYPE   : postgres
+[2026-06-03T16:41:16.522+0000] {subprocess.py:93} INFO - HOST      : 3.107.8.33
+[2026-06-03T16:41:16.525+0000] {subprocess.py:93} INFO - PORT      : 5432
+[2026-06-03T16:41:16.528+0000] {subprocess.py:93} INFO - DATABASE  : metadata_db
+[2026-06-03T16:41:16.531+0000] {subprocess.py:93} INFO - USERNAME  : teamuser
+[2026-06-03T16:41:16.534+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-03T16:41:16.537+0000] {subprocess.py:93} INFO - 
+[2026-06-03T16:41:16.540+0000] {subprocess.py:93} INFO - Connected to POSTGRES successfully.
+[2026-06-03T16:41:16.542+0000] {subprocess.py:93} INFO - 
+[2026-06-03T16:41:16.543+0000] {subprocess.py:93} INFO - Running pipeline: local_to_postgres_pipeline (storage_to_db)
+[2026-06-03T16:41:16.545+0000] {subprocess.py:93} INFO - Loading table: customer (2 rows)
+[2026-06-03T16:41:16.546+0000] {subprocess.py:93} INFO - Loading table: data pic1 (91 rows)
+[2026-06-03T16:41:16.548+0000] {subprocess.py:93} INFO - Loading table: employee (20 rows)
+[2026-06-03T16:41:16.549+0000] {subprocess.py:93} INFO - Loading table: employee_data (100 rows)
+[2026-06-03T16:41:16.550+0000] {subprocess.py:93} INFO - Loading table: sample (2 rows)
+[2026-06-03T16:41:16.551+0000] {subprocess.py:93} INFO - Loading table: word (12 rows)
+[2026-06-03T16:41:16.552+0000] {subprocess.py:93} INFO - Processed total rows: 227
+[2026-06-03T16:41:16.553+0000] {subprocess.py:93} INFO - Completed: 227 rows processed
+[2026-06-03T16:41:17.781+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-06-03T16:41:17.783+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-03T16:41:17.810+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=local_to_postgres_pipeline, task_id=run_pipeline_4, run_id=scheduled__2026-06-03T16:35:00+00:00, execution_date=20260603T163500, start_date=20260603T164002, end_date=20260603T164117
+[2026-06-03T16:41:17.853+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-03T16:41:17.889+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-03T16:41:17.895+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

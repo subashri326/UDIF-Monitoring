@@ -1,0 +1,40 @@
+[2026-06-08T05:57:53.862+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-08T05:57:53.894+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3_to_postgres_pipeline.run_pipeline_5 scheduled__2026-06-08T05:50:00+00:00 [queued]>
+[2026-06-08T05:57:53.905+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3_to_postgres_pipeline.run_pipeline_5 scheduled__2026-06-08T05:50:00+00:00 [queued]>
+[2026-06-08T05:57:53.906+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-08T05:57:53.923+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_pipeline_5> on 2026-06-08 05:50:00+00:00
+[2026-06-08T05:57:53.930+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 's3_to_postgres_pipeline', 'run_pipeline_5', 'scheduled__2026-06-08T05:50:00+00:00', '--job-id', '317', '--raw', '--subdir', 'DAGS_FOLDER/dynamic_pipeline_generator.py', '--cfg-path', '/tmp/tmpboe5wd0l']
+[2026-06-08T05:57:53.933+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=257) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-08T05:57:53.934+0000] {standard_task_runner.py:91} INFO - Job 317: Subtask run_pipeline_5
+[2026-06-08T05:57:53.935+0000] {standard_task_runner.py:63} INFO - Started process 273 to run task
+[2026-06-08T05:57:53.992+0000] {task_command.py:426} INFO - Running <TaskInstance: s3_to_postgres_pipeline.run_pipeline_5 scheduled__2026-06-08T05:50:00+00:00 [running]> on host 450cdec9e3e5
+[2026-06-08T05:57:54.089+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='subashri' AIRFLOW_CTX_DAG_ID='s3_to_postgres_pipeline' AIRFLOW_CTX_TASK_ID='run_pipeline_5' AIRFLOW_CTX_EXECUTION_DATE='2026-06-08T05:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-08T05:50:00+00:00'
+[2026-06-08T05:57:54.090+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-08T05:57:54.115+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-06-08T05:57:54.117+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/src && python main.py 5']
+[2026-06-08T05:57:54.132+0000] {subprocess.py:86} INFO - Output:
+[2026-06-08T05:58:17.176+0000] {subprocess.py:93} INFO - 
+[2026-06-08T05:58:17.177+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-08T05:58:17.177+0000] {subprocess.py:93} INFO - DATABASE CONNECTION CONFIG
+[2026-06-08T05:58:17.178+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-08T05:58:17.178+0000] {subprocess.py:93} INFO - DB TYPE   : postgres
+[2026-06-08T05:58:17.179+0000] {subprocess.py:93} INFO - HOST      : 3.107.8.33
+[2026-06-08T05:58:17.180+0000] {subprocess.py:93} INFO - PORT      : 5432
+[2026-06-08T05:58:17.180+0000] {subprocess.py:93} INFO - DATABASE  : metadata_db
+[2026-06-08T05:58:17.181+0000] {subprocess.py:93} INFO - USERNAME  : teamuser
+[2026-06-08T05:58:17.181+0000] {subprocess.py:93} INFO - ===================================
+[2026-06-08T05:58:17.182+0000] {subprocess.py:93} INFO - 
+[2026-06-08T05:58:17.182+0000] {subprocess.py:93} INFO - Connected to POSTGRES successfully.
+[2026-06-08T05:58:17.183+0000] {subprocess.py:93} INFO - 
+[2026-06-08T05:58:17.183+0000] {subprocess.py:93} INFO - Running pipeline: s3_to_postgres_pipeline (storage_to_db)
+[2026-06-08T05:58:17.184+0000] {subprocess.py:93} INFO - Loading table: customer_feb (120 rows)
+[2026-06-08T05:58:17.185+0000] {subprocess.py:93} INFO - Loading table: customer_jan (100 rows)
+[2026-06-08T05:58:17.185+0000] {subprocess.py:93} INFO - Loading table: customer_march (150 rows)
+[2026-06-08T05:58:17.186+0000] {subprocess.py:93} INFO - Processed total rows: 370
+[2026-06-08T05:58:17.186+0000] {subprocess.py:93} INFO - Completed: 370 rows processed
+[2026-06-08T05:58:17.399+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-06-08T05:58:17.401+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-08T05:58:17.434+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=s3_to_postgres_pipeline, task_id=run_pipeline_5, run_id=scheduled__2026-06-08T05:50:00+00:00, execution_date=20260608T055000, start_date=20260608T055753, end_date=20260608T055817
+[2026-06-08T05:58:17.463+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-08T05:58:17.481+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-08T05:58:17.484+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
